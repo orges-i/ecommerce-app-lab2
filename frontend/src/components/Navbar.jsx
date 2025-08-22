@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { assets } from '../assets/assets'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Home from '../pages/Home'
 
 const Navbar = () => {
 
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
       
-    <img src={assets.logo} className='w-36' alt="" srcset="" />
+    <Link to='/' ><img src={assets.logo} className='w-36' alt="" srcSet="" /></Link> 
 
     <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
@@ -41,10 +42,10 @@ const Navbar = () => {
 
     <div className='flex items-center gap-6'>
 
-    <img src={assets.search_icon} className='w-5 cursor-pointer' alt="" srcset="" />
+    <img src={assets.search_icon} className='w-5 cursor-pointer' alt="" srcSet="" />
 
     <div className="group relative">
-    <img src = {assets.profile_icon} className='w-5 cursor-pointer' alt="" srcset="" />
+    <img src = {assets.profile_icon} className='w-5 cursor-pointer' alt="" srcSet="" />
 
     {/* Dropdown menu per profile options */}
 
