@@ -41,6 +41,12 @@ Menaxhim detyrash: Trello
 
 Dokumentim: Notion
 
+VS Code Extensions
+- GitLens – Historiku i commits dhe blame për çdo rresht
+- ES7+ React/Redux snippets – Shkurtesa për gjenerim komponentësh, asistence ne React 
+- GitHub Copilot – Asistencë AI për sugjerime në kod
+- Import Cost – Tregon madhësinë e librarive të importuara, optimizon performancen
+
 ---
 
 **Arkitektura e sistemit**
@@ -59,3 +65,6 @@ Pagesa me Stripe (Test Mode)
 - Demonstrim i dizajnit me dy databaza (SQL + NoSQL).
 - Implementim i funksioneve moderne (auth, chat, pagesa).
 - Dorëzim i nje aplikacioni funksional, te dokumentuar dhe profesional.
+
+---
+
