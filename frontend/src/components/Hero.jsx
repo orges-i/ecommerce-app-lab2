@@ -11,14 +11,12 @@ const Hero = () => {
             {/* Top Line/divider + Text */}
             <div className="flex items-center gap-2">
               <p className="w-8 md:w-11 h-[2px] bg-[#414141]"></p>
-              <p className="font-medium text-sm md:text-base">
-                MË TË SHITURAT TONA
-              </p>
+              <p className="font-medium text-sm md:text-base">MIRË SE VINI</p>
             </div>
 
             {/* Heading main */}
             <h1 className="prata-regular text-3xl sm:py-3 lg:text-5xl leading-relaxed">
-              Ardhjet më të reja
+              Arritjet më të reja
             </h1>
 
             {/* Shop Now + Line/divider */}
