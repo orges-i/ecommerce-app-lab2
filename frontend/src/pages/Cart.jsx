@@ -1,11 +1,39 @@
-import React from 'react'
+import React, { use, useEffect } from "react";
+import { useContext } from "react";
+import { ShopContext } from "../context/ShopContext";
+import { useState } from "react";
+import Title from "../components/Title";
 
 const Cart = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { products, currency, cartItems } = useContext(ShopContext);
 
-export default Cart
+  const [cartData, setCartData] = useState([]);
+
+  useEffect(() => {
+    const tempData = [];
+    for (const items in cartItems) {
+      for (const item in cartItems[items]) {
+        if (cartItems[items][item] > 0) {
+          tempData.push({
+            _id: items,
+            size: item,
+            quantity: cartItems[items][item],
+          });
+        }
+      }
+    }
+    setCartData(tempData);
+  }, [cartItems]);
+
+  return (
+    <div className="border-t pt-14">
+      <div className="text-2xl mb-3">
+        <Title text1={"SHPORTA"} text2={"JUAJ"} />
+      </div>
+
+      <div>{cartData.map((item, index) => {})}</div>
+    </div>
+  );
+};
+
+export default Cart;

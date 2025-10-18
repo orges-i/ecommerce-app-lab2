@@ -6,7 +6,7 @@ import RelatedProducts from "../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency } = useContext(ShopContext); // Merr products dhe currency nga context
+  const { products, currency, addToCart } = useContext(ShopContext); // Merr products dhe currency nga context
   const [productData, setProductData] = useState(false); // State per product data
   const [image, setImage] = useState(""); // State per main image
   const [size, setSize] = useState(""); // State per selected size / highlight
@@ -18,7 +18,7 @@ const Product = () => {
       if (item._id === productId) {
         setProductData(item);
         setImage(item.image[0]);
-        console.log(item);
+        // console.log(item);
         return null;
       }
     });
@@ -91,7 +91,10 @@ const Product = () => {
             </div>
           </div>
 
-          <button className="bg-black text-white px-8 py-3 text-sn active:bg-gray-700">
+          <button
+            onClick={() => addToCart(productData._id, size)}
+            className="bg-black text-white px-8 py-3 text-sn active:bg-gray-700"
+          >
             Shto në shportë
           </button>
 
