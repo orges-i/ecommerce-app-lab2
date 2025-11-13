@@ -1,6 +1,6 @@
 import userModel from "../models/userModel.js";
 import validator from "validator";
-import bycrypt from "bcryptjs";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 const createToken = (id) => {
@@ -10,7 +10,32 @@ const createToken = (id) => {
 //ky file eshte controller ne te cilin do te implementohen funksionalitetet per menaxhimin e userave
 
 //Route for user login
-const loginUser = async (req, res) => {};
+const loginUser = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const user = await userModel.findOne({ email });
+    if (!user) {
+      return res.json({
+        success: false,
+        message: "Përdoruesi nuk ekziston!",
+      });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (isMatch) {
+      const token = createToken(user._id);
+      res.json({
+        success: true,
+        token,
+      });
+    } else {
+      res.json({ success: false, message: "Fjalëkalim i gabuar!" });
+    }
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
 
 // Route for user registration
 const registerUser = async (req, res) => {
@@ -41,8 +66,8 @@ const registerUser = async (req, res) => {
 
     //hashing password me bcryptjs
 
-    const salt = await bycrypt.genSalt(10);
-    const hashedPassword = await bycrypt.hash(password, salt);
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
 
     const newUser = new userModel({
       name,
