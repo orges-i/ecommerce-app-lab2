@@ -1,0 +1,16 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Prata&display=swap");
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Elms Sans;
+}
+
+.active {
+  background-color: #ffebf5;
+  border-color: #c586a5;
+}
