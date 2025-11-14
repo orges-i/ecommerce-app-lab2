@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
-import { ShopContext } from "../context/shopContext";
+import { ShopContext } from "../context/ShopContext";
 import Title from "./Title";
 import ProductItem from "./ProductItem";
 
@@ -11,7 +11,7 @@ const BestSeller = () => {
   useEffect(() => {
     const bestProduct = products.filter((item) => item.bestseller); //Merr vetem produktet më të shitura
     setBestSeller(bestProduct.slice(0, 5)); //Merr vetëm 5 produkte dhe i ruan ato ne state
-  }, []);
+  }, [products]);
 
   return (
     //Frontend për seksionin e produkteve më të shitura

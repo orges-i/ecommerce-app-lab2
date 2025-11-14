@@ -97,9 +97,9 @@ export const assets = {
 export const products = [
   {
     _id: "aaaaa",
-    name: "Women Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e lehtë e endur, shumë e rehatshme, me jakë rreth dhe mëngë të shkurtra. Mund të vishet si veshje e brendshme ose e jashtme për përdorim të përditshëm.",
     price: 100,
     image: [p_img1],
     category: "Women",
@@ -110,9 +110,9 @@ export const products = [
   },
   {
     _id: "aaaab",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e lehtë dhe e butë, e endur, me jakë rreth dhe mëngë të shkurtra. E përkryer për stil casual ose sportiv.",
     price: 200,
     image: [p_img2_1, p_img2_2, p_img2_3, p_img2_4],
     category: "Men",
@@ -123,9 +123,9 @@ export const products = [
   },
   {
     _id: "aaaac",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e lehtë dhe e butë, me jakë rreth dhe mëngë të shkurtra, ideale për përdorim të përditshëm dhe aktivitete të fëmijëve.",
     price: 220,
     image: [p_img3],
     category: "Kids",
@@ -136,9 +136,9 @@ export const products = [
   },
   {
     _id: "aaaad",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë praktike dhe e rehatshme prej pambuku, me dizajn minimalist dhe jakë rreth. E përshtatshme për çdo ditë.",
     price: 110,
     image: [p_img4],
     category: "Men",
@@ -149,9 +149,9 @@ export const products = [
   },
   {
     _id: "aaaae",
-    name: "Women Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e butë dhe e lehtë, me jakë rreth dhe dizajn klasik, komode për stil casual.",
     price: 130,
     image: [p_img5],
     category: "Women",
@@ -162,9 +162,9 @@ export const products = [
   },
   {
     _id: "aaaaf",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e rehatshme me mëngë të shkurtra dhe jakë rreth, e bërë nga material i butë që përshtatet për lëvizje të fëmijëve.",
     price: 140,
     image: [p_img6],
     category: "Kids",
@@ -175,9 +175,9 @@ export const products = [
   },
   {
     _id: "aaaag",
-    name: "Men Tapered Fit Flat-Front Trousers",
+    name: "Pantallona të ngushta me prerje të drejtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të rehatshme me dizajn klasik, të përshtatshme për veshje casual ose zyrtare.",
     price: 190,
     image: [p_img7],
     category: "Men",
@@ -188,9 +188,9 @@ export const products = [
   },
   {
     _id: "aaaah",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e qëndrueshme dhe e lehtë, me jakë rreth dhe mëngë të shkurtra, ideale për veshje të përditshme.",
     price: 140,
     image: [p_img8],
     category: "Men",
@@ -201,9 +201,9 @@ export const products = [
   },
   {
     _id: "aaaai",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e butë dhe shumë e lehtë për fëmijët. Me jakë rreth dhe mëngë të shkurtra, perfekte për ditë të ngrohta.",
     price: 100,
     image: [p_img9],
     category: "Kids",
@@ -214,9 +214,9 @@ export const products = [
   },
   {
     _id: "aaaaj",
-    name: "Men Tapered Fit Flat-Front Trousers",
+    name: "Pantallona të ngushta me prerje të drejtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të dizajnuara për rehati gjatë gjithë ditës, të kombinuara lehtë me çdo stil.",
     price: 110,
     image: [p_img10],
     category: "Men",
@@ -227,9 +227,9 @@ export const products = [
   },
   {
     _id: "aaaak",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë pambuku me material të butë dhe të qëndrueshëm, me dizajn të thjeshtë dhe jakë rreth.",
     price: 120,
     image: [p_img11],
     category: "Men",
@@ -240,9 +240,9 @@ export const products = [
   },
   {
     _id: "aaaal",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e lehtë e bërë nga pambuk cilësor, me pamje klasike dhe mëngë të shkurtra.",
     price: 150,
     image: [p_img12],
     category: "Men",
@@ -253,9 +253,9 @@ export const products = [
   },
   {
     _id: "aaaam",
-    name: "Women Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e butë dhe shumë e rehatshme, ideale për veshje ditore ose casual, me jakë rreth dhe prerje të lehtë.",
     price: 130,
     image: [p_img13],
     category: "Women",
@@ -266,9 +266,9 @@ export const products = [
   },
   {
     _id: "aaaan",
-    name: "Boy Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për djem",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e dizajnuar për fëmijë, e lehtë dhe e butë, që ofron rehati gjatë lojës dhe aktivitetit.",
     price: 160,
     image: [p_img14],
     category: "Kids",
@@ -279,9 +279,9 @@ export const products = [
   },
   {
     _id: "aaaao",
-    name: "Men Tapered Fit Flat-Front Trousers",
+    name: "Pantallona të ngushta me prerje të drejtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të stilit modern me material cilësor, të përshtatshme si për stil casual ashtu edhe për kombinime elegante.",
     price: 140,
     image: [p_img15],
     category: "Men",
@@ -292,9 +292,9 @@ export const products = [
   },
   {
     _id: "aaaap",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e butë, e lehtë dhe e rehatshme, me jakë rreth dhe dizajn të thjeshtë, e përshtatshme për përdorim të përditshëm.",
     price: 170,
     image: [p_img16],
     category: "Kids",
@@ -305,9 +305,9 @@ export const products = [
   },
   {
     _id: "aaaaq",
-    name: "Men Tapered Fit Flat-Front Trousers",
+    name: "Pantallona të ngushta me prerje të drejtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona praktike dhe të rehatshme me stil modern, të përshtatshme për veshje casual ose gjysmë-formale.",
     price: 150,
     image: [p_img17],
     category: "Men",
@@ -318,9 +318,9 @@ export const products = [
   },
   {
     _id: "aaaar",
-    name: "Boy Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për djem",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e lehtë dhe e frymëzuar nga stili sportiv, me jakë rreth dhe material të butë pambuku.",
     price: 180,
     image: [p_img18],
     category: "Kids",
@@ -331,9 +331,9 @@ export const products = [
   },
   {
     _id: "aaaas",
-    name: "Boy Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për djem",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e rehatshme dhe shumë funksionale për fëmijët, me jakë rreth dhe mëngë të shkurtra, perfekte për çdo aktivitet.",
     price: 160,
     image: [p_img19],
     category: "Kids",
@@ -344,9 +344,9 @@ export const products = [
   },
   {
     _id: "aaaat",
-    name: "Women Palazzo Pants with Waist Belt",
+    name: "Pantallona palazzo me rrip beli për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të gjera, super komode, me rrip në bel dhe dizajn elegant. Ideale për veshje verore ose për evente të lehta.",
     price: 190,
     image: [p_img20],
     category: "Women",
@@ -357,9 +357,9 @@ export const products = [
   },
   {
     _id: "aaaau",
-    name: "Women Zip-Front Relaxed Fit Jacket",
+    name: "Xhaketë e lirshme me zinxhir për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë e rehatshme me zinxhir të përparmë, e përshtatshme për temperaturë të freskët dhe stil casual.",
     price: 170,
     image: [p_img21],
     category: "Women",
@@ -370,9 +370,9 @@ export const products = [
   },
   {
     _id: "aaaav",
-    name: "Women Palazzo Pants with Waist Belt",
+    name: "Pantallona palazzo me rrip beli për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të gjera dhe elegante me material të butë, të pajisura me rrip beli për formë dhe rehati.",
     price: 200,
     image: [p_img22],
     category: "Women",
@@ -383,9 +383,9 @@ export const products = [
   },
   {
     _id: "aaaaw",
-    name: "Boy Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për djem",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e thjeshtë dhe shumë funksionale për fëmijët, perfekte për veshje ditore dhe aktivitete sportive.",
     price: 180,
     image: [p_img23],
     category: "Kids",
@@ -396,9 +396,9 @@ export const products = [
   },
   {
     _id: "aaaax",
-    name: "Boy Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për djem",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë komode me dizajn minimal, prej pambuku të butë dhe të frymëmarrshëm, e përshtatshme për çdo ditë.",
     price: 210,
     image: [p_img24],
     category: "Kids",
@@ -409,9 +409,9 @@ export const products = [
   },
   {
     _id: "aaaay",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e butë dhe e rehatshme, ideale për stilin e përditshëm të fëmijëve, me jakë rreth dhe material cilësor.",
     price: 190,
     image: [p_img25],
     category: "Kids",
@@ -422,9 +422,9 @@ export const products = [
   },
   {
     _id: "aaaaz",
-    name: "Women Zip-Front Relaxed Fit Jacket",
+    name: "Xhaketë e lirshme me zinxhir për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë funksionale dhe e ngrohtë me mbyllje me zinxhir, dizajnuar për stil të përditshëm dhe mot të freskët.",
     price: 220,
     image: [p_img26],
     category: "Women",
@@ -435,9 +435,9 @@ export const products = [
   },
   {
     _id: "aaaba",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e lehtë dhe shumë e butë për fëmijët, me dizajn klasik që përshtatet për çdo stinë.",
     price: 200,
     image: [p_img27],
     category: "Kids",
@@ -448,9 +448,9 @@ export const products = [
   },
   {
     _id: "aaabb",
-    name: "Men Slim Fit Relaxed Denim Jacket",
+    name: "Xhaketë xhins e ngushtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë xhins me model modern dhe materiale të qëndrueshme, perfekte për stil casual.",
     price: 230,
     image: [p_img28],
     category: "Men",
@@ -461,9 +461,9 @@ export const products = [
   },
   {
     _id: "aaabc",
-    name: "Women Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë me prerje klasike dhe material pambuku të butë, e bërë për rehati gjatë gjithë ditës.",
     price: 210,
     image: [p_img29],
     category: "Women",
@@ -474,9 +474,9 @@ export const products = [
   },
   {
     _id: "aaabd",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e bukur dhe komode për vajza, me material të butë dhe mëngë të shkurtra.",
     price: 240,
     image: [p_img30],
     category: "Kids",
@@ -485,11 +485,12 @@ export const products = [
     date: 1716644245448,
     bestseller: false,
   },
+
   {
     _id: "aaabe",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e bërë nga pambuk cilësor, me jakë rreth dhe dizajn minimalist që përshtatet me çdo stil.",
     price: 220,
     image: [p_img31],
     category: "Men",
@@ -500,9 +501,9 @@ export const products = [
   },
   {
     _id: "aaabf",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e butë dhe e rehatshme, me pamje klasike dhe material të frymëmarrshëm pambuku.",
     price: 250,
     image: [p_img32],
     category: "Men",
@@ -513,9 +514,9 @@ export const products = [
   },
   {
     _id: "aaabg",
-    name: "Girls Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për vajza",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e lehtë dhe e butë, perfekte për veshje të përditshme, me dizajn të thjeshtë dhe ngjyra të këndshme.",
     price: 230,
     image: [p_img33],
     category: "Kids",
@@ -526,9 +527,9 @@ export const products = [
   },
   {
     _id: "aaabh",
-    name: "Women Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e rehatshme dhe e butë e bërë nga pambuk cilësor, me dizajn klasik që përshtatet për çdo rast.",
     price: 260,
     image: [p_img34],
     category: "Women",
@@ -539,9 +540,9 @@ export const products = [
   },
   {
     _id: "aaabi",
-    name: "Women Zip-Front Relaxed Fit Jacket",
+    name: "Xhaketë e lirshme me zinxhir për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë e ngrohtë dhe praktike me mbyllje me zinxhir, ideale për ditët e ftohta dhe stil të përditshëm.",
     price: 240,
     image: [p_img35],
     category: "Women",
@@ -552,9 +553,9 @@ export const products = [
   },
   {
     _id: "aaabj",
-    name: "Women Zip-Front Relaxed Fit Jacket",
+    name: "Xhaketë e lirshme me zinxhir për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë cilësore me material të ngrohtë, mbyllje me zinxhir dhe dizajn modern për stil të ftohtë dimëror.",
     price: 270,
     image: [p_img36],
     category: "Women",
@@ -565,9 +566,9 @@ export const products = [
   },
   {
     _id: "aaabk",
-    name: "Women Round Neck Cotton Top",
+    name: "Bluzë pambuku me jakë rreth për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë universale prej pambuku, elegante dhe shumë e rehatshme, e krijuar për përdorim të përditshëm.",
     price: 250,
     image: [p_img37],
     category: "Women",
@@ -578,9 +579,9 @@ export const products = [
   },
   {
     _id: "aaabl",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e thjeshtë dhe e butë, me dizajn minimal dhe material pambuku që ofron rehati të lartë.",
     price: 280,
     image: [p_img38],
     category: "Men",
@@ -591,9 +592,9 @@ export const products = [
   },
   {
     _id: "aaabm",
-    name: "Men Printed Plain Cotton Shirt",
+    name: "Këmishë pambuku me printim për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Këmishë e lehtë pambuku me printim elegant, e përshtatshme për stil casual ose për evente të lehta.",
     price: 260,
     image: [p_img39],
     category: "Men",
@@ -604,9 +605,9 @@ export const products = [
   },
   {
     _id: "aaabn",
-    name: "Men Slim Fit Relaxed Denim Jacket",
+    name: "Xhaketë xhins e ngushtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë xhins e dizajnuar me stil modern, me material të fortë dhe të qëndrueshëm për veshje të përditshme.",
     price: 290,
     image: [p_img40],
     category: "Men",
@@ -617,9 +618,9 @@ export const products = [
   },
   {
     _id: "aaabo",
-    name: "Men Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një bluzë e cilësisë së lartë me jakë rreth dhe material të butë, e lehtë për t'u kombinuar me çdo veshje.",
     price: 270,
     image: [p_img41],
     category: "Men",
@@ -630,9 +631,9 @@ export const products = [
   },
   {
     _id: "aaabp",
-    name: "Boy Round Neck Pure Cotton T-shirt",
+    name: "Bluzë pambuku me jakë rreth për djem",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Bluzë e rehatshme dhe e lehtë për fëmijë, me dizajn klasik dhe material pambuku që ofron frymëmarrje.",
     price: 300,
     image: [p_img42],
     category: "Kids",
@@ -643,9 +644,9 @@ export const products = [
   },
   {
     _id: "aaabq",
-    name: "Kid Tapered Slim Fit Trouser",
+    name: "Pantallona të ngushta për fëmijë",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të rehatshme për fëmijë me dizajn praktik dhe material të butë për lëvizje të lirshme.",
     price: 280,
     image: [p_img43],
     category: "Kids",
@@ -656,9 +657,9 @@ export const products = [
   },
   {
     _id: "aaabr",
-    name: "Women Zip-Front Relaxed Fit Jacket",
+    name: "Xhaketë e lirshme me zinxhir për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë e ngrohtë dimri me material të butë dhe mbyllje me zinxhir, ideale për ditët e ftohta.",
     price: 310,
     image: [p_img44],
     category: "Women",
@@ -669,9 +670,9 @@ export const products = [
   },
   {
     _id: "aaabs",
-    name: "Men Slim Fit Relaxed Denim Jacket",
+    name: "Xhaketë xhins e ngushtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Një xhaketë xhins moderne dhe e qëndrueshme, perfekte për veshje të përditshme dhe kombinime casual.",
     price: 290,
     image: [p_img45],
     category: "Men",
@@ -682,9 +683,9 @@ export const products = [
   },
   {
     _id: "aaabt",
-    name: "Men Slim Fit Relaxed Denim Jacket",
+    name: "Xhaketë xhins e ngushtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë xhins cilësore me prerje të ngushtë, me material të fortë që siguron qëndrueshmëri dhe stil modern.",
     price: 320,
     image: [p_img46],
     category: "Men",
@@ -693,11 +694,12 @@ export const products = [
     date: 1716661845448,
     bestseller: false,
   },
+
   {
     _id: "aaabu",
-    name: "Kid Tapered Slim Fit Trouser",
+    name: "Pantallona të ngushta për fëmijë",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të buta dhe të rehatshme për fëmijë, me dizajn të thjeshtë dhe material që lejon lëvizje të lirshme gjatë ditës.",
     price: 300,
     image: [p_img47],
     category: "Kids",
@@ -708,9 +710,9 @@ export const products = [
   },
   {
     _id: "aaabv",
-    name: "Men Slim Fit Relaxed Denim Jacket",
+    name: "Xhaketë xhins e ngushtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë xhins moderne me prerje të ngushtë, ideale për stil streetwear dhe veshje të përditshme.",
     price: 330,
     image: [p_img48],
     category: "Men",
@@ -721,9 +723,9 @@ export const products = [
   },
   {
     _id: "aaabw",
-    name: "Kid Tapered Slim Fit Trouser",
+    name: "Pantallona të ngushta për fëmijë",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona të rehatshme me material fleksibël për fëmijë, të përshtatshme për çdo aktivitet dhe stil casual.",
     price: 310,
     image: [p_img49],
     category: "Kids",
@@ -734,9 +736,9 @@ export const products = [
   },
   {
     _id: "aaabx",
-    name: "Kid Tapered Slim Fit Trouser",
+    name: "Pantallona të ngushta për fëmijë",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Pantallona praktike për fëmijë me material të butë, të qëndrueshme dhe perfekte për veshje të përditshme.",
     price: 340,
     image: [p_img50],
     category: "Kids",
@@ -747,9 +749,9 @@ export const products = [
   },
   {
     _id: "aaaby",
-    name: "Women Zip-Front Relaxed Fit Jacket",
+    name: "Xhaketë e lirshme me zinxhir për femra",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë elegante dhe e ngrohtë dimri, me mbyllje me zinxhir dhe material të butë që siguron rehati dhe stil.",
     price: 320,
     image: [p_img51],
     category: "Women",
@@ -760,9 +762,9 @@ export const products = [
   },
   {
     _id: "aaabz",
-    name: "Men Slim Fit Relaxed Denim Jacket",
+    name: "Xhaketë xhins e ngushtë për meshkuj",
     description:
-      "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+      "Xhaketë premium xhins me prerje të ngushtë dhe dizajn modern, e përkryer për stile urbane dhe kombinime casual.",
     price: 350,
     image: [p_img52],
     category: "Men",

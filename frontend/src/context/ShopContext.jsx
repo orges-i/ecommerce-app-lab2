@@ -1,9 +1,9 @@
 import { createContext } from "react";
-import { products } from "../assets/assets";
 import { useState } from "react";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export const ShopContext = createContext();
 
@@ -12,9 +12,11 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = "€"; // Mundesh me ndrru valuten qysh te dush
   const delivery_fee = 10;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [search, setSearch] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   const [cartItems, setCartItems] = useState({});
+  const [products, setProducts] = useState([]);
   const navigate = useNavigate();
 
   const addToCart = async (itemId, size) => {
@@ -80,6 +82,25 @@ const ShopContextProvider = (props) => {
   //     console.log(cartItems); //Shfaqje e te dhena te cartItems per qellime debug/testing
   //   }, [cartItems]);
 
+  const getProductsData = async () => {
+    try {
+      const response = await axios.get(backendUrl + "/api/product/list");
+
+      if (response.data.success) {
+        setProducts(response.data.products);
+      } else {
+        toast.error(response.data.message);
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
+  };
+
+  useEffect(() => {
+    getProductsData();
+  }, []);
+
   // Vlerat qe do te jene te aksesueshme nga context API
   const value = {
     products,
@@ -95,6 +116,7 @@ const ShopContextProvider = (props) => {
     updateQuantity,
     getCartAmount,
     navigate,
+    backendUrl,
   };
 
   return (

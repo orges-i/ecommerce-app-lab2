@@ -78,7 +78,7 @@ const Collection = () => {
 
   useEffect(() => {
     applyFilter(); // thirr funksionin e filtrimit sa here qe ndryshon state e kategorive ose nenkategorive
-  }, [category, subCategory]);
+  }, [category, subCategory, products]);
 
   useEffect(() => {
     sortProduct(); // thirr funksionin e sortimit sa here qe ndryshon state e llojit te sortimit
@@ -140,7 +140,7 @@ const Collection = () => {
                 value={"Kids"}
                 onChange={toggleCategory}
               />
-              Femije
+              Femijë
             </p>
           </div>
         </div>
