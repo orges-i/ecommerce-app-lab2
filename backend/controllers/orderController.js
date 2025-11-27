@@ -36,7 +36,16 @@ const placeOrderStripe = async (req, res) => {};
 const placeOrderRazorpay = async (req, res) => {};
 
 // te dhenat e Te gjitha e porosive per Panelin e adminit
-const allOrders = async (req, res) => {};
+const allOrders = async (req, res) => {
+  try {
+    // kthen krejt porosite pa filtrim
+    const orders = await orderModel.find({});
+    res.json({ success: true, orders });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
 
 // Te dhenat e porosive te user per Frontend
 const userOrders = async (req, res) => {
@@ -52,7 +61,20 @@ const userOrders = async (req, res) => {
 };
 
 // Perditso statusin e porosise prej Panelit te adminit // vetem admini mundet
-const updateStatus = async (req, res) => {};
+//Admini dergon orderId + statusin e ri
+const updateStatus = async (req, res) => {
+  try {
+    const { orderId, status } = req.body; // Merr te dhenat nga frontend
+
+    // Gjej porosine sipas orderId dhe ndrysho fushen "status"
+
+    await orderModel.findByIdAndUpdate(orderId, { status });
+    res.json({ success: true, message: "Statusi i porosisë u përditësua" });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
 
 export {
   placeOrder,
