@@ -2,10 +2,10 @@ import express from "express";
 import {
   placeOrder,
   placeOrderStripe,
-  placeOrderRazorpay,
   allOrders,
   userOrders,
   updateStatus,
+  verifyStripe,
 } from "../controllers/orderController.js";
 import adminAuth from "../middleware/adminAuth.js";
 import authUser from "../middleware/auth.js";
@@ -19,9 +19,11 @@ orderRouter.post("/status", adminAuth, updateStatus);
 //Features te pagesave
 orderRouter.post("/place", authUser, placeOrder);
 orderRouter.post("/stripe", authUser, placeOrderStripe);
-orderRouter.post("/razorpay", authUser, placeOrderRazorpay);
 
 // Feature te perdoruesit
 orderRouter.post("/userorders", authUser, userOrders);
+
+//Verifiko pagesen
+orderRouter.post("/verifyStripe", authUser, verifyStripe);
 
 export default orderRouter;

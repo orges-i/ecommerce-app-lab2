@@ -8,8 +8,9 @@ import authUser from "../middleware/auth.js";
 
 const cartRouter = express.Router();
 
-cartRouter.post("/get", authUser, getUserCart);
-cartRouter.post("/add", authUser, addToCart);
-cartRouter.post("/update", authUser, updateCart);
+//cart routes
+cartRouter.post("/get", authUser, getUserCart); // merr shporten e usesr
+cartRouter.post("/add", authUser, addToCart); // shto produkt
+cartRouter.post("/update", authUser, updateCart); // perditeson sasi / update
 
 export default cartRouter;

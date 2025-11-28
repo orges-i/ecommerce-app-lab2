@@ -11,6 +11,8 @@ const Orders = () => {
 
   const [orderData, setOrderData] = useState([]);
 
+  //Merr porosite e userit nga databaza
+
   const loadOrderData = async () => {
     try {
       if (!token) {
@@ -25,6 +27,7 @@ const Orders = () => {
 
       if (response.data.success) {
         let allOrdersItem = [];
+        // flatten array i order.items
         response.data.orders.map((order) => {
           order.items.map((item) => {
             item["status"] = order.status;

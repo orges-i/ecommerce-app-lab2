@@ -7,7 +7,7 @@ import axios from "axios";
 
 export const ShopContext = createContext();
 
-//ketu kemi perdor context API pepr me kriju dhe nda te dhena globale ne te gjithe Web
+//ketu kemi perdor context API per me kriju dhe nda te dhena globale ne te gjithe Web
 
 const ShopContextProvider = (props) => {
   const currency = "€"; // Mundesh me ndrru valuten qysh te dush
@@ -20,14 +20,17 @@ const ShopContextProvider = (props) => {
   const [token, setToken] = useState("");
   const navigate = useNavigate();
 
+  //shton produkt ne shporte ne frontend dhe backend
   const addToCart = async (itemId, size) => {
     if (!size) {
       toast.error("Ju lutem zgjidhni nje madhesi."); //Notifikim gabimi nese nuk eshte zgjedhur size
       return;
     }
 
+    //kopjo shporten aktuale
     let cartData = structuredClone(cartItems);
 
+    //logjika e shtimit te produktit
     if (cartData[itemId]) {
       if (cartData[itemId][size]) {
         cartData[itemId][size] += 1; // Nese ekziston produkti me ate size, rrit sasine
@@ -41,6 +44,7 @@ const ShopContextProvider = (props) => {
 
     setCartItems(cartData); // Update state me te dhena te reja
 
+    //neqoftese user eshte i kyqur dergo ne databaze
     if (token) {
       try {
         await axios.post(
@@ -69,6 +73,7 @@ const ShopContextProvider = (props) => {
     return totalCount; // Kthen numrin total te artikujve ne shporte
   };
 
+  // ndryshon sasine e produktit te shportes ne front dhe backend
   const updateQuantity = async (itemId, size, quantity) => {
     let cartData = structuredClone(cartItems);
 
@@ -128,6 +133,7 @@ const ShopContextProvider = (props) => {
     }
   };
 
+  //merr shporten e userit nga databaza pas login ose refresh
   const getUserCart = async (token) => {
     try {
       const response = await axios.post(

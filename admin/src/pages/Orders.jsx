@@ -25,7 +25,7 @@ const Orders = ({ token }) => {
 
       //nese API kthen sukses, vendos porosite ne state
       if (response.data.success) {
-        setOrders(response.data.orders);
+        setOrders(response.data.orders.reverse());
       } else {
         toast.error(response.data.message);
       }
