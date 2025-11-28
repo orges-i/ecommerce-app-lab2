@@ -27,8 +27,10 @@ const Verify = () => {
 
       if (response.data.success) {
         setCartItems({});
+        toast.success("Pagesa u verifikua me sukses");
         navigate("/orders");
       } else {
+        toast.error("Pagesa dështoi, provo sërish");
         navigate("/cart");
       }
     } catch (error) {

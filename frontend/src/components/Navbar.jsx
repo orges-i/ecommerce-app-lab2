@@ -6,14 +6,8 @@ import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
-  const {
-    setShowSearch,
-    getCartCount,
-    navigate,
-    token,
-    setToken,
-    setCartItems,
-  } = useContext(ShopContext);
+  const { getCartCount, navigate, token, setToken, setCartItems } =
+    useContext(ShopContext);
 
   //funksioni per logout/Dil
   const logout = () => {
@@ -54,14 +48,6 @@ const Navbar = () => {
       {/* Icons ne anen e djathte te navbar-it */}
 
       <div className="flex items-center gap-6">
-        <img
-          onClick={() => setShowSearch(true)}
-          src={assets.search_icon}
-          className="w-5 cursor-pointer"
-          alt=""
-          srcSet=""
-        />
-
         <div className="group relative">
           <img
             onClick={() => (token ? null : navigate("/login"))}

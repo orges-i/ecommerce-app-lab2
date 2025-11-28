@@ -8,7 +8,7 @@ import Title from "../components/Title";
 import ProductItem from "../components/ProductItem";
 
 const Collection = () => {
-  const { products } = useContext(ShopContext); // Access products from context
+  const { products, search, setSearch } = useContext(ShopContext); // Access products and search state from context
   const [showFilter, setShowFilter] = useState(false); // State to toggle filter visibility
   const [filterProducts, setFilterProducts] = useState([]); //State per te ruajtur produktet e filtruar
   const [category, setCategory] = useState([]); // State per te ruajtur kategorite e selektuara
@@ -47,6 +47,13 @@ const Collection = () => {
       ); // filtro produktet bazuar ne nenkategorite e selektuara
     }
 
+    if (search.trim()) {
+      const term = search.trim().toLowerCase();
+      productsCopy = productsCopy.filter((item) =>
+        item.name.toLowerCase().includes(term)
+      ); // filtro produktet sipas emrit
+    }
+
     setFilterProducts(productsCopy); // perditeso state e produkteve te filtruar
   };
 
@@ -78,7 +85,7 @@ const Collection = () => {
 
   useEffect(() => {
     applyFilter(); // thirr funksionin e filtrimit sa here qe ndryshon state e kategorive ose nenkategorive
-  }, [category, subCategory, products]);
+  }, [category, subCategory, products, search]);
 
   useEffect(() => {
     sortProduct(); // thirr funksionin e sortimit sa here qe ndryshon state e llojit te sortimit
@@ -186,21 +193,37 @@ const Collection = () => {
       {/* Right side Gridi i produkteve */}
 
       <div className="flex-1">
-        <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-base sm:text-2xl mb-4">
+        <div className="flex flex-col sm:flex-row sm:justify-between gap-3 text-base sm:text-2xl mb-4">
           <Title text1={"TË GJITHA"} text2={"KOLEKSIONET"} />
-          {/* Sortimi i produkteve */}
-          <select
-            onChange={(e) => setSortType(e.target.value)}
-            className="border-2 border-gray-300 text-sm px-2"
-          >
-            <option value="relavant">Rendit sipas përkatësisë</option>
-            <option value="low-high">
-              Çmimi: nga më i ulëti tek më i larti
-            </option>
-            <option value="high-low">
-              Çmimi: nga më i larti tek më i ulëti
-            </option>
-          </select>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+            <div className="flex w-full sm:w-72 gap-2">
+              <input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Kerko produkt"
+                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded outline-none"
+              />
+              <button
+                onClick={applyFilter}
+                className="px-4 text-sm bg-black text-white rounded"
+              >
+                Kerko
+              </button>
+            </div>
+            {/* Sortimi i produkteve */}
+            <select
+              onChange={(e) => setSortType(e.target.value)}
+              className="border-2 border-gray-300 text-sm px-2 py-2"
+            >
+              <option value="relavant">Rendit sipas përkatësisë</option>
+              <option value="low-high">
+                Çmimi: nga më i ulëti tek më i larti
+              </option>
+              <option value="high-low">
+                Çmimi: nga më i larti tek më i ulëti
+              </option>
+            </select>
+          </div>
         </div>
         {/* Map products */}
 

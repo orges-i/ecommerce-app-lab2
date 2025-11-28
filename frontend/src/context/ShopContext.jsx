@@ -52,10 +52,14 @@ const ShopContextProvider = (props) => {
           { itemId, size },
           { headers: { token } }
         );
+        toast.success("Produkti u shtua ne shporte");
       } catch (error) {
         console.log(error);
         toast.error(error.message);
       }
+    }
+    if (!token) {
+      toast.success("Produkti u shtua ne shporte");
     }
   };
 

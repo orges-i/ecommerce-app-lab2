@@ -74,6 +74,7 @@ const PlaceOrder = () => {
           );
           if (response.data.success) {
             setCartItems({});
+            toast.success("Porosia u krijua me sukses");
             navigate("/orders");
           } else {
             toast.error(response.data.message);

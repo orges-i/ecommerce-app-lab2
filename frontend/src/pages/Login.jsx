@@ -28,6 +28,7 @@ const Login = () => {
         if (response.data.success) {
           setToken(response.data.token);
           localStorage.setItem("token", response.data.token);
+          toast.success("Llogaria u krijua me sukses");
         } else {
           toast.error(response.data.message);
         } //api per login
@@ -40,6 +41,7 @@ const Login = () => {
         if (response.data.success) {
           setToken(response.data.token);
           localStorage.setItem("token", response.data.token);
+          toast.success("Hyrje e suksesshme");
         } else {
           toast.error(response.data.message);
         }
