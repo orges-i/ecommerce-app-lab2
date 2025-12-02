@@ -2,6 +2,9 @@ import React from "react";
 import { assets } from "../assets/assets";
 
 const Footer = () => {
+  const adminUrl =
+    import.meta.env.VITE_ADMIN_URL || "http://localhost:5173/";
+
   return (
     <div>
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
@@ -37,6 +40,14 @@ const Footer = () => {
         <p className="py-5 text-sm text-center">
           &copy; {new Date().getFullYear()} Bleta. Të gjitha të drejtat e
           rezervuara.
+          <a
+            href={adminUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="ml-3 text-xs text-gray-400 hover:text-gray-600"
+          >
+            Admin
+          </a>
         </p>
       </div>
     </div>
